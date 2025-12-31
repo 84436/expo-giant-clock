@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "expo": "58.0.22",
+    "expo-build-properties": "58.0.12",
+    "expo-font": "58.0.11",
+    "expo-keep-awake": "58.0.3",
+    "expo-navigation-bar": "58.0.4",
+    "expo-splash-screen": "58.0.12",
+    "expo-status-bar": "58.0.4",
+    "expo-system-ui": "58.0.7",
+    "react": "19.3.0",
+    "react-native": "0.88.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "expo-doctor": "1.21.5",
+    "oxfmt": "0.75.0",
+    "oxlint": "1.90.0",
+    "oxlint-config-universe": "0.2.0",
+    "typescript": "7.0.2"
+  },
+  "expo": {
+    "install": {
+      "exclude": [
+        "typescript"
+      ]
+    }
+  },
+  "main": "src/index.ts",
+  "name": "expo-giant-clock",
+  "private": true,
+  "scripts": {
+    "amend": "GIT_COMMITTER_DATE=\"2026-01-01T00:00:00+0700\" GIT_AUTHOR_DATE=\"2026-01-01T00:00:00+0700\" git commit --amend --no-edit --allow-empty-message --reset-author",
+    "dev": "expo start --go",
+    "doctor": "expo-doctor --verbose",
+    "prebuild": "expo prebuild --platform=android --no-install"
+  },
+  "version": "1.0.0"
+}
